@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="transactions-header">
+        <h1>لیست تراکنش ها</h1>
+        <button class="load-transactions">بارگذاری تراکنش ها</button>
+       <div class="transaction-search">
+        <input type="text" placeholder=" جستجوی تراکنش ( شماره پیگیری ) ... " class="search-transaction">
+        <img src="/assets/images/icon/search.png" alt="">
+       </div>
+      </div>
+      <div class="transactions-body">
+        <h2 class="transactions-title">لیست تراکنش های شما </h2>
+        <div class="transactions-head">
+          <span>ردیف</span>
+          <span>نوع تراکنش </span>
+          <span>
+            <span>مبلغ</span>
+            <img src="/assets/images/icon/chevron-down.png" alt="" class="price-sort sort-data" data-sort="price">
+          </span>
+          <span>شماره پیگیری</span>
+          <span>
+            <span>تاریخ تراکنش</span>
+            <img src="/assets/images/icon/chevron-down.png" alt="" class="date-sort sort-data" data-sort="date">
+          </span>
+        </div>
+        <div class="transactions-items">
+         <div class="transactions-items preload">
+          <p>تراکنش ها بارگذاری نشده اند با زدن کلید بارگذاری ,می توانید تراکنش ها را مشاهده کنید ...</p>
+         </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
